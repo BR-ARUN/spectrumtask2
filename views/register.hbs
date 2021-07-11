@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="register">
+      <h2>Register Here</h2>
+      <form action="/auth/register" method="POST" id="register">
+        <label for="">Name</label>
+        <br>
+        <input type="text" name="fname" id="name"  minlength="3" placeholder="Enter your name">
+        <br><br>
+        <label for="">Email</label>
+        <br>
+        <input type="email" name="email" id="name" placeholder="Enter your email">
+        <br><br>
+        <label for="">Mobile number</label>
+        <br>
+        <input type="tel" name="number" id="name" placeholder="Enter your mobile number">
+        <br><br>
+        <label for="">Branch</label>
+        <br>
+        <input type="text" name="branchs" id="name" placeholder="Enter your branch">
+        <br><br>
+        <label for="">Year</label>
+        <br>
+        <input type="text" name="years" id="name" placeholder="Enter year">
+        <br><br>
+        <label for="">Domain</label>
+        <br>
+        <input type="text" name="domains" id="name" placeholder="Enter your domain">
+        <br><br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" minlength="8" name="password" id="name" placeholder="Enter your password">
+        <br><br>
+        <label for="">Confirm Password</label>
+        <br>
+        <input type="password" name="cpassword" id="name" placeholder="Confirm your password">
+        <br><br>
+        <input type="submit" value="Submit" name="submit" id="submit">
+        <p>Have an account? <a href="/index">login</a></p>
+      </form>
+      {{#if message }}
+      <h4 class="alert">{{message}} </h4>
+      {{/if}}
+    </div>
+  </div>
+
+  
+</body>
+</html>
